@@ -5,17 +5,23 @@ function navbar() {
     const navItems = document.createElement('ul'); 
     navItems.id = 'nav-items'; 
 
-    const navHome = document.createElement('li');
+    const navHomeLi = document.createElement('li');
+    const navHome = document.createElement('a'); 
     navHome.textContent = 'Home'; 
     navHome.classList.add('nav-item');  
+    navHomeLi.appendChild(navHome); 
 
-    const navMenu = document.createElement('li');
+    const navMenuLi = document.createElement('li');
+    const navMenu = document.createElement('a'); 
     navMenu.textContent = 'Menu';
-    navMenu.classList.add('nav-item');   
+    navMenu.classList.add('nav-item'); 
+    navMenuLi.appendChild(navMenu);  
 
-    const navContact = document.createElement('li');
+    const navContactLi = document.createElement('li');
+    const navContact = document.createElement('a'); 
     navContact.textContent = 'Contact'; 
-    navContact.classList.add('nav-item');  
+    navContact.classList.add('nav-item'); 
+    navContactLi.appendChild(navContact);  
 
     navItems.appendChild(navHome); 
     navItems.appendChild(navMenu); 

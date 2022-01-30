@@ -7,6 +7,7 @@ function menu(){
     const pastaImage = document.createElement('img'); 
     pastaImage.src = '/src/assets/pasta.jpg'; 
     pastaImage.classList.add('food-image'); 
+    const pastaTextBlock = document.createElement('div'); 
     const pastaHeader = document.createElement('h2');
     pastaHeader.classList.add('food-header');  
     pastaHeader.textContent = 'Spaghetti and Meatballs'; 
@@ -14,8 +15,9 @@ function menu(){
     pastaText.classList.add('food-text'); 
     pastaText.textContent = 'Very cooked spaghetti noodles topped with the finest Prego, meataballés, and fresh mozzarella';
     pastaDiv.appendChild(pastaImage); 
-    pastaDiv.appendChild(pastaHeader); 
-    pastaDiv.appendChild(pastaText); 
+    pastaTextBlock.appendChild(pastaHeader); 
+    pastaTextBlock.appendChild(pastaText); 
+    pastaDiv.appendChild(pastaTextBlock); 
     menuPage.appendChild(pastaDiv); 
 
     const eggDiv = document.createElement('div'); 
@@ -23,6 +25,7 @@ function menu(){
     const eggImage = document.createElement('img'); 
     eggImage.src = '/src/assets/egg.jpg'; 
     eggImage.classList.add('food-image'); 
+    const eggTextBlock = document.createElement('div'); 
     const eggHeader = document.createElement('h2');
     eggHeader.classList.add('food-header');  
     eggHeader.textContent = 'Eggs and Rice'; 
@@ -30,8 +33,9 @@ function menu(){
     eggText.classList.add('food-text'); 
     eggText.textContent = 'Steamed rice topped with stir fried eggs and whatever is in the fridge (or nothing at all!)';
     eggDiv.appendChild(eggImage); 
-    eggDiv.appendChild(eggHeader); 
-    eggDiv.appendChild(eggText); 
+    eggTextBlock.appendChild(eggHeader); 
+    eggTextBlock.appendChild(eggText); 
+    eggDiv.appendChild(eggTextBlock);
     menuPage.appendChild(eggDiv); 
 
     const mugcakeDiv = document.createElement('div'); 
@@ -39,6 +43,7 @@ function menu(){
     const mugcakeImage = document.createElement('img'); 
     mugcakeImage.src = '/src/assets/mugcake.jpg';
     mugcakeImage.classList.add('food-image');  
+    const mugcakeTextBlock = document.createElement('div'); 
     const mugcakeHeader = document.createElement('h2');
     mugcakeHeader.classList.add('food-header');  
     mugcakeHeader.textContent = 'Mug Cake'; 
@@ -46,8 +51,9 @@ function menu(){
     mugcakeText.classList.add('food-text'); 
     mugcakeText.textContent = 'Mug cake of whatever flavor you want! If it is not nutella or peanut butter though, be prepared for a suprise.';
     mugcakeDiv.appendChild(mugcakeImage); 
-    mugcakeDiv.appendChild(mugcakeHeader); 
-    mugcakeDiv.appendChild(mugcakeText); 
+    mugcakeTextBlock.appendChild(mugcakeHeader); 
+    mugcakeTextBlock.appendChild(mugcakeText);
+    mugcakeDiv.appendChild(mugcakeTextBlock);  
     menuPage.appendChild(mugcakeDiv); 
 
     const appleDiv = document.createElement('div'); 
@@ -55,6 +61,7 @@ function menu(){
     const appleImage = document.createElement('img'); 
     appleImage.src = '/src/assets/apples.jpg'; 
     appleImage.classList.add('food-image'); 
+    const appleTextBlock = document.createElement('div'); 
     const appleHeader = document.createElement('h2');
     appleHeader.classList.add('food-header');  
     appleHeader.textContent = 'Apples and Fixins'; 
@@ -62,8 +69,9 @@ function menu(){
     appleText.classList.add('food-text'); 
     appleText.textContent = 'Apple slices paired with the god\'s nutty spread and possibly other kitchen fixins (ie oatmealé, breadé, stringé cheesé).';
     appleDiv.appendChild(appleImage); 
-    appleDiv.appendChild(appleHeader); 
-    appleDiv.appendChild(appleText); 
+    appleTextBlock.appendChild(appleHeader); 
+    appleTextBlock.appendChild(appleText); 
+    appleDiv.appendChild(appleTextBlock); 
     menuPage.appendChild(appleDiv); 
 
     return menuPage; 

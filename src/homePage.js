@@ -9,6 +9,7 @@ function homePage() {
 
     const homeText = document.createElement('div'); 
     homeText.id = 'home-text'; 
+    
     const heroText = document.createElement('h1')
     heroText.textContent = 'Your Very Own Professional Chef'; 
     heroText.id = 'hero-text'; 
@@ -19,18 +20,19 @@ function homePage() {
     ctaText.id = 'cta-text'; 
     homeText.appendChild(ctaText); 
 
-    const homeButtons = document.createElement('div'); 
+    /*const homeButtons = document.createElement('div'); 
     const menuButton = document.createElement('button'); 
     menuButton.textContent = 'Menu'; 
     menuButton.classList.add('cta-button'); 
+
     homeButtons.appendChild(menuButton); 
 
     const contactButton = document.createElement('button'); 
     contactButton.textContent = 'Contact'; 
     contactButton.classList.add('cta-button'); 
-    homeButtons.appendChild(contactButton);
+    homeButtons.appendChild(contactButton); */ 
 
-    homeText.appendChild(homeButtons); 
+    //homeText.appendChild(homeButtons); 
     content.appendChild(homeText); 
     /*const headerPicture = document.createElement('img')
     headerPicture.src = '/src/header-image.jpg'; 

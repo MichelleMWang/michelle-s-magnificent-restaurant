@@ -1,6 +1,6 @@
 function contact(){
     console.log('hi from contact!'); 
-    const contactPage = document.createElement('div'); 
+    const contactPage = document.createElement('div');
 
     const phoneNumber = document.createElement('div'); 
     //TODO: add phone icon 
@@ -11,6 +11,7 @@ function contact(){
     address.textContent = '030 Owokawai Ave UWUTAKE, LV 033330';
     //TODO: add google map 
     contactPage.appendChild(address); 
+    console.log(contactPage); 
 
     return contactPage; 
 }

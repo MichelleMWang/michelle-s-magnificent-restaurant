@@ -13,7 +13,8 @@ function navbar() {
     const navHomeLi = document.createElement('li');
     const navHome = document.createElement('a'); 
     navHome.textContent = 'Home'; 
-    navHome.classList.add('nav-item');  
+    navHome.classList.add('nav-item');
+    navHome.classList.add('current-tab');
     navHomeLi.appendChild(navHome); 
 
     const navMenuLi = document.createElement('li');

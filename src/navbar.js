@@ -2,6 +2,11 @@ function navbar() {
     const navBar = document.createElement('nav'); 
     navBar.id = 'navbar'; 
 
+    const logo = document.createElement('h1'); 
+    logo.textContent = 'Michelle\'s Magnificent'; 
+    logo.id = 'logo'; 
+    navBar.appendChild(logo); 
+
     const navItems = document.createElement('ul'); 
     navItems.id = 'nav-items'; 
 

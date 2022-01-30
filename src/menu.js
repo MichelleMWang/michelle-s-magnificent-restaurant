@@ -5,7 +5,7 @@ function menu(){
     const pastaDiv = document.createElement('div'); 
     pastaDiv.classList.add('food-item'); 
     const pastaImage = document.createElement('img'); 
-    pastaImage.src = '/src/assets/pasta.jpg'; 
+    pastaImage.src = './assets/pasta.jpg'; 
     pastaImage.classList.add('food-image'); 
     const pastaTextBlock = document.createElement('div'); 
     const pastaHeader = document.createElement('h2');
@@ -23,7 +23,7 @@ function menu(){
     const eggDiv = document.createElement('div'); 
     eggDiv.classList.add('food-item'); 
     const eggImage = document.createElement('img'); 
-    eggImage.src = '/src/assets/egg.jpg'; 
+    eggImage.src = './assets/egg.jpg'; 
     eggImage.classList.add('food-image'); 
     const eggTextBlock = document.createElement('div'); 
     const eggHeader = document.createElement('h2');
@@ -41,7 +41,7 @@ function menu(){
     const mugcakeDiv = document.createElement('div'); 
     mugcakeDiv.classList.add('food-item'); 
     const mugcakeImage = document.createElement('img'); 
-    mugcakeImage.src = '/src/assets/mugcake.jpg';
+    mugcakeImage.src = './assets/mugcake.jpg';
     mugcakeImage.classList.add('food-image');  
     const mugcakeTextBlock = document.createElement('div'); 
     const mugcakeHeader = document.createElement('h2');
@@ -59,7 +59,7 @@ function menu(){
     const appleDiv = document.createElement('div'); 
     appleDiv.classList.add('food-item'); 
     const appleImage = document.createElement('img'); 
-    appleImage.src = '/src/assets/apples.jpg'; 
+    appleImage.src = './assets/apples.jpg'; 
     appleImage.classList.add('food-image'); 
     const appleTextBlock = document.createElement('div'); 
     const appleHeader = document.createElement('h2');

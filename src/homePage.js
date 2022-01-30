@@ -19,26 +19,9 @@ function homePage() {
     ctaText.textContent = 'On Duty 24/7'; 
     ctaText.id = 'cta-text'; 
     homeText.appendChild(ctaText); 
-
-    /*const homeButtons = document.createElement('div'); 
-    const menuButton = document.createElement('button'); 
-    menuButton.textContent = 'Menu'; 
-    menuButton.classList.add('cta-button'); 
-
-    homeButtons.appendChild(menuButton); 
-
-    const contactButton = document.createElement('button'); 
-    contactButton.textContent = 'Contact'; 
-    contactButton.classList.add('cta-button'); 
-    homeButtons.appendChild(contactButton); */ 
-
-    //homeText.appendChild(homeButtons); 
     content.appendChild(homeText); 
-    /*const headerPicture = document.createElement('img')
-    headerPicture.src = '/src/header-image.jpg'; 
-    headerPicture.id = 'header-picture'; 
-    content.appendChild(headerPicture); */ 
-    content.style.backgroundImage = 'url(/src/assets/header-image.jpg)'; 
+
+    content.style.backgroundImage = 'url(./assets/header-image.jpg)'; 
 
     return content; 
 }

@@ -29,18 +29,41 @@ body{
         padding: 0; 
     }
     .nav-item{
-        padding: 1.5rem;  
+        padding: 1.5rem; 
+        padding-bottom: .25rem;  
         font-size: 20px; 
+        position: relative; 
         &:hover{
             cursor: pointer; 
             color:rgb(167, 148, 139); 
-            text-decoration: underline;
+            //text-decoration: underline;
         }
     }
 }
+.nav-item::before {
+    content: ''; 
+    position: absolute; 
+    left: 10%; 
+    bottom: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color:rgb(248, 239, 239); 
+    transition: width 0.3s ease-out; 
+}
+.nav-item:hover::before{
+    width: 80%; 
+}
 .current-tab{
     color:rgb(167, 148, 139);
-    text-decoration: underline;
+}
+.current-tab::before{
+    content: ''; 
+    position: absolute; 
+    left: 10%; 
+    bottom: 0; 
+    width: 80%; 
+    height: 2px; 
+    background-color:rgb(248, 239, 239); 
 }
 #home-header{
     -webkit-background-size: cover;
@@ -75,6 +98,10 @@ body{
     display: flex; 
     margin: 1rem;
     background-color: rgb(51, 51, 51);
+    transition: transform .2s; 
+    &:hover{
+        transform: scale(1.1); 
+    }
     .food-image{
         max-width: 50vw;
         max-height: 187px; 
@@ -84,6 +111,15 @@ body{
     }
     .food-header{
         margin: 1rem; 
+    }
+}
+
+#contact-page{
+    padding: 1rem; 
+    div{
+        padding: 1rem; 
+        font-size: 20px; 
+        background-color:rgb(51, 51, 51); 
     }
 }
 

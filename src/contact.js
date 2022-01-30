@@ -1,6 +1,7 @@
 function contact(){
     console.log('hi from contact!'); 
     const contactPage = document.createElement('div');
+    contactPage.id = 'contact-page'; 
 
     const phoneNumber = document.createElement('div'); 
     //TODO: add phone icon 

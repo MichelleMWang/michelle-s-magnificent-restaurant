@@ -44,18 +44,44 @@ body h1, body h2, body h3, body p, body a, body div {
 
 #navbar .nav-item {
   padding: 1.5rem;
+  padding-bottom: .25rem;
   font-size: 20px;
+  position: relative;
 }
 
 #navbar .nav-item:hover {
   cursor: pointer;
   color: #a7948b;
-  text-decoration: underline;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f8efef;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.nav-item:hover::before {
+  width: 80%;
 }
 
 .current-tab {
   color: #a7948b;
-  text-decoration: underline;
+}
+
+.current-tab::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background-color: #f8efef;
 }
 
 #home-header {
@@ -100,6 +126,15 @@ body h1, body h2, body h3, body p, body a, body div {
   display: flex;
   margin: 1rem;
   background-color: #333333;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.food-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .food-item .food-image {
@@ -113,6 +148,16 @@ body h1, body h2, body h3, body p, body a, body div {
 
 .food-item .food-header {
   margin: 1rem;
+}
+
+#contact-page {
+  padding: 1rem;
+}
+
+#contact-page div {
+  padding: 1rem;
+  font-size: 20px;
+  background-color: #333333;
 }
 
 @media screen and (max-width: 500px) {
